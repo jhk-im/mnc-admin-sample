@@ -8,7 +8,8 @@
 export default {
   name: "App",
   metaInfo: {
-    title: "App",
+    title: "MNC-ADMIN-SAMPLE",
+    titleTemplate: "%s | Mnc Admin Sample",
     htmlAttrs: { lang: "en" },
     meta: [
       { charset: "utf-8" },

@@ -2,5 +2,6 @@
 
 import "./app";
 import "./chartist";
+import "./base";
 import "./webfontloader";
 import "./vue-meta";

@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: "App",
+  name: "Auth",
   components: {},
   data() {
     return {
