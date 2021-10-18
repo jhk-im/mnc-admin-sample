@@ -2,12 +2,11 @@
   <v-app>
     <v-container fluid fill-height id="login-page">
       <v-layout align-center justify-center>
-        <v-flex :style="{ 'max-width': '350px' }">
+        <v-flex :style="{ 'max-width': '400px' }">
           <base-material-card>
             <template v-slot:heading>
               <div class="display-3 text-center">
-                <!-- {{ $admin.title }} -->
-                Title
+                {{ $t("auth.title") }}
               </div>
             </template>
             <v-card-text>

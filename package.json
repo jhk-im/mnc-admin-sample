@@ -20,14 +20,18 @@
     "vue-router": "^3.2.0",
     "vuedraggable": "^2.23.0",
     "vuetify": "^2.4.0",
-    "vuetify-admin": "^0.5.0",
-    "vuex": "^3.4.0"
+    "vuetify-admin": "^0.5.7",
+    "vuex": "^3.4.0",
+    "vuex-pathify": "^1.5.1"
   },
   "devDependencies": {
     "@intlify/vue-i18n-loader": "^1.1.0",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.10.9",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/eslint-config-prettier": "^6.0.0",
@@ -38,9 +42,9 @@
     "prettier": "^2.2.1",
     "sass": "~1.32.0",
     "sass-loader": "^10.0.0",
+    "typescript": "^4.4.4",
     "vue-cli-plugin-i18n": "latest",
     "vue-cli-plugin-vuetify": "latest",
-    "vue-cli-plugin-vuetify-admin": "latest",
     "vue-template-compiler": "^2.6.11",
     "vuetify-loader": "^1.7.0"
   }

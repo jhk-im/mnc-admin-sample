@@ -14,6 +14,7 @@
     "not_found": "Not found"
   },
   "auth": {
+    "title": "KB CMS",
     "username": "Username",
     "password": "Password",
     "remember": "Remember",
@@ -45,7 +46,8 @@
   "menu": {
     "login": "Login",
     "profile": "Profile",
-    "dashboard": "Dashboard"
+    "dashboard": "Dashboard",
+    "users": "Users"
   },
   "resources": {
     "users": {
