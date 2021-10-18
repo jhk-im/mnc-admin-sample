@@ -58,6 +58,16 @@ export default {
       loading: false,
     };
   },
+  computed: {
+    loggedIn() {
+      return this.$store.state.auth.status.loggedIn;
+    },
+  },
+  created() {
+    if (this.loggedIn) {
+      this.$router.push("/dashboard");
+    }
+  },
   methods: {
     validate() {
       if (this.$refs.form.validate()) {
