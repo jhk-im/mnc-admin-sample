@@ -6,7 +6,7 @@ import { layout, route } from "@/util/routes";
 Vue.use(Router);
 
 const router = new Router({
-  made: "history",
+  mode: "history",
   base: process.env.BASE_URL,
   scrollBehavior: (to, from, savedPosition) => {
     if (to.hash) return { selector: to.hash };
@@ -15,18 +15,8 @@ const router = new Router({
     return { x: 0, y: 0 };
   },
   routes: [
-    layout("Auth", [route("Login")]),
-    layout("Default", [
-      route("Dashboard"),
-      // // Pages
-      // route("UserProfile", null, "components/profile"),
-
-      // // Components
-      // route("Notifications", null, "components/notifications"),
-
-      // // Tables
-      // route("Regular Tables", null, "tables/regular"),
-    ]),
+    layout("Default", [route("Dashboard")]),
+    layout("Auth", [route("Login")], "/login"),
   ],
 });
 

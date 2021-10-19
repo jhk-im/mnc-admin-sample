@@ -16,13 +16,11 @@
 
     <div class="px-2">
       <default-drawer-header />
-
       <v-divider class="mx-3 mb-2" />
-
       <default-list :items="items" />
     </div>
 
-    <template #append>
+    <!-- <template #append>
       <div class="pa-4 text-center">
         <app-btn
           class="text-none mb-4"
@@ -45,7 +43,7 @@
           Upgrade to Pro
         </app-btn>
       </div>
-    </template>
+    </template> -->
 
     <div class="pt-12" />
   </v-navigation-drawer>

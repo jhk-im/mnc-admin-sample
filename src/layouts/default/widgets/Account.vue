@@ -17,7 +17,12 @@
       <template v-for="(p, i) in profile">
         <v-divider v-if="p.divider" :key="`divider-${i}`" class="mb-2 mt-2" />
 
-        <app-bar-item v-else :key="`item-${i}`" to="/">
+        <app-bar-item
+          v-else
+          :key="`item-${i}`"
+          to="/"
+          v-on:click.native="logout(i)"
+        >
           <v-list-item-title v-text="p.title" />
         </app-bar-item>
       </template>
@@ -37,5 +42,14 @@ export default {
       { title: "Log out" },
     ],
   }),
+  methods: {
+    logout(count) {
+      console.log(count);
+      if (count == 3) {
+        this.$store.dispatch("auth/logout");
+        this.$router.push("/login");
+      }
+    },
+  },
 };
 </script>

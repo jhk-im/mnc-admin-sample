@@ -9,5 +9,15 @@
 <script>
 export default {
   name: "DefaultView",
+  computed: {
+    loggedIn() {
+      return this.$store.state.auth.status.loggedIn;
+    },
+  },
+  created() {
+    if (!this.loggedIn) {
+      this.$router.push("/login");
+    }
+  },
 };
 </script>

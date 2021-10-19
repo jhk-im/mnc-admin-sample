@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app v-if="loggedIn">
     <default-bar />
 
     <default-drawer />
@@ -15,7 +15,16 @@
 <script>
 export default {
   name: "DefaultLayout",
-
+  computed: {
+    loggedIn() {
+      return this.$store.state.auth.status.loggedIn;
+    },
+  },
+  created() {
+    if (!this.loggedIn) {
+      this.$router.push("/login");
+    }
+  },
   components: {
     DefaultBar: () =>
       import(
