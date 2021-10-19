@@ -9,7 +9,7 @@ const state = {
   mini: false,
   items: [
     {
-      title: "Dashboard",
+      title: "대시보드",
       icon: "mdi-view-dashboard",
       to: "/",
     },

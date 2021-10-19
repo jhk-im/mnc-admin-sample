@@ -42,7 +42,7 @@
 
 <script>
 // Utilities
-import { get } from "vuex-pathify";
+//import { get } from "vuex-pathify";
 
 export default {
   name: "DefaultListGroup",
@@ -59,7 +59,7 @@ export default {
   },
 
   computed: {
-    gradient: get("user/drawer@gradient"),
+    //gradient: get("user/drawer@gradient"),
     group() {
       return this.genGroup(this.item.items);
     },

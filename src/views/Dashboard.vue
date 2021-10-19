@@ -136,7 +136,7 @@
 
 <script>
 // Utilities
-import { get } from "vuex-pathify";
+//import { get } from "vuex-pathify";
 import Vue from "vue";
 
 const lineSmooth = Vue.chartist.Interpolation.cardinal({
@@ -394,11 +394,11 @@ export default {
     },
   }),
 
-  computed: {
-    sales: get("sales/sales"),
-    totalSales() {
-      return this.sales.reduce((acc, val) => acc + val.salesInM, 0);
-    },
-  },
+  // computed: {
+  //   sales: get("sales/sales"),
+  //   totalSales() {
+  //     return this.sales.reduce((acc, val) => acc + val.salesInM, 0);
+  //   },
+  // },
 };
 </script>
