@@ -18,7 +18,7 @@
     ></v-text-field>
 
     <div class="text-center">
-      <v-btn :loading="loading" color="primary" large type="submit" text rounded
+      <v-btn :loading="loading" color="#807456" large type="submit" text rounded
         >로그인</v-btn
       >
     </div>
@@ -52,12 +52,12 @@ export default {
       if (this.$refs.form.validate()) {
         this.errorMessages = {};
         if (this.form.username.length <= 0) {
-          this.errorMessages = { email: [this.$t("error.auth.username")] };
+          this.errorMessages = { email: ["아이디를 입력해 주세요"] };
           console.log(this.form.username);
           return;
         } else if (this.form.password.length <= 0) {
           console.log(this.form.password);
-          this.errorMessages = { password: [this.$t("error.auth.password")] };
+          this.errorMessages = { password: ["패스워드를 입력해 주세요"] };
           return;
         }
 

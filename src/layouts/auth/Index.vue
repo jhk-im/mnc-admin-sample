@@ -8,10 +8,6 @@
               <div class="display-3 text-center">KB 증권방송 CMS</div>
             </template>
             <v-card-text>
-              <!-- <div class="text-center mb-4">
-                <img src="../assets/logo.svg" width="80" height="80" />
-              </div> -->
-
               <transition name="fade" mode="out-in">
                 <router-view></router-view>
               </transition>
@@ -25,12 +21,12 @@
 
 <style scoped>
 #login-page {
-  background-color: #34495e;
+  background-color: #807456;
 }
 </style>
 
 <script>
 export default {
-  name: "A",
+  name: "Auth",
 };
 </script>

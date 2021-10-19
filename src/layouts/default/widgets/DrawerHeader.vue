@@ -8,7 +8,7 @@
       <v-list-item-title class="text-h3">
         <strong class="mr-1 font-weight-black">KB 증권방송</strong>
 
-        <span class="primary--text">CMS</span>
+        <span class="warning--text">CMS</span>
       </v-list-item-title>
     </v-list-item-content>
   </v-list-item>

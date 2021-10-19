@@ -14,7 +14,7 @@ export default {
               attrs: this.$attrs,
               class: {
                 "black--text": !hover,
-                "white--text secondary elevation-12": hover,
+                "white--text warning elevation-12": hover,
               },
               props: {
                 activeClass: "",
